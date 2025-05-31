@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TieS wind symphony</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="TieS_wind_symphony.css">
+    <script src="TieS_wind_symphony.js"></script>
+</head>
+<body>
+    <!-- ローディング画面 -->
+    <div class="loading-screen" id="loading">
+        <div class="loading-logo">TieS wind symphony</div>
+        <div class="progress-bar">
+            <div class="progress-fill"></div>
+        </div>
+    </div>
+
+    <!-- スクロールインジケーター -->
+    <div class="scroll-indicator">
+        <div class="scroll-progress" id="scrollProgress"></div>
+    </div>
+
+    <!-- パーティクル背景 -->
+    <div class="particles" id="particles"></div>
+
+    <!-- ヘッダー -->
+    <header>
+        <nav>
+            <a href="#home" class="logo">TieS</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#activities" class="nav-link">ACTIVITIES</a>
+                    <div class="dropdown">
+                        <a href="https://www.sh.shonan-it.ac.jp/" target="_blank">湘南工科大学附属高等学校</a>
+                        <a href="https://www.sh.shonan-it.ac.jp/club-report/20231108/" target="_blank">活動レポート</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#join" class="nav-link">JOIN</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ヒーローセクション -->
+        <section id="home" class="hero">
+            <h1>TieS wind symphony</h1>
+            <p class="subtitle">タイズ ウィンド シンフォニー</p>
+            <p>湘南から響く、音楽で結ぶ絆の調べ。私たちは「出逢い」と「ご縁」を大切にし、吹奏楽を通じて人と人とを繋げる一般吹奏楽団です。年齢や立場を越えて、
+                音楽への情熱を共有し、新たな【TieS サウンド】を奏でています。</p>
+            <a href="#about" class="btn">私たちについて</a>
+        </section>
+
+        <!-- ABOUT セクション -->
+        <section id="about">
+            <div class="content-card">
+                <h2>About Us</h2>
+                
+                <h3>楽団名の由来</h3>
+                <p>『TieS』という言葉には、「絆」や「結ぶ」という意味が込められています。大文字のSには「湘南のS」「湘南工科のS」「ShowのS」「笑のS」等、
+                    シンボルマークとしてさまざまな意味を込めて、あえて大文字にしています。</p>
+                
+                <h3>楽団に込めた想い</h3>
+                <p>団員は、中学校の同級生や高校の先輩・後輩という関係性もあれば、年齢も出身校も全く違う人もいます。しかし、全員に共通しているのは『吹奏楽を楽しみたい』
+                    という強い想いで繋がっていることです。</p>
+                <p>また、吹奏楽には人と人を繋げる力があると私たちは考えています。楽団名の意味することを、音楽を通して表現し、たくさんの繋がりをもった活動にしていくことをめざしています。</p>
+
+                <h3>活動概要</h3>
+                <p><strong>拠点：</strong> 神奈川県 湘南地域（湘南工科大学附属高等学校 音楽室・大講義室）</p>
+                <p><strong>活動頻度：</strong> 月2回の活動（本番前は追加練習あり）</p>
+                <p><strong>練習時間：</strong> 主に土日の13:00〜17:00（本番前は9:00〜17:00の1日練習）</p>
+            </div>
+        </section>
+
+        <!-- ACTIVITIES セクション -->
+        <section id="activities">
+            <div class="content-card">
+                <h2>Activities</h2>
+                
+                <h3>年間スケジュール</h3>
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>月</th>
+                            <th>演奏会</th>
+                            <th>会場</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>8月</td>
+                            <td>どなたサマ〜もコンサート!!</td>
+                            <td>大講義室</td>
+                        </tr>
+                        <tr>
+                            <td>12月</td>
+                            <td>クリスマスコンサート</td>
+                            <td>うみかぜテラス・コミュニティーセンター</td>
+                        </tr>
+                        <tr>
+                            <td>1月</td>
+                            <td>吹奏楽の集い</td>
+                            <td>茅ヶ崎市民文化会館</td>
+                        </tr>
+                        <tr>
+                            <td>2月</td>
+                            <td>ふれあいコンサート</td>
+                            <td>大講義室</td>
+                        </tr>
+                        <tr>
+                            <td>3月</td>
+                            <td>スプリングコンサート（定期演奏会）</td>
+                            <td>茅ヶ崎市民文化会館</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>活動の特徴</h3>
+                <p>団内の雰囲気はアットホームですが、音楽には真剣に取り組む姿勢を大切にしています。学業・仕事を両立しつつ、「忙しくても集まりたくなる場所」であり続けることを目指します。</p>
+                <p>演奏だけでなく、運営や準備も含め、団員皆さん一人ひとりの協力により活動が成立しています。</p>
+            </div>
+        </section>
+
+        <!-- JOIN セクション -->
+        <section id="join">
+            <div class="content-card">
+                <h2>Join Us</h2>
+                
+                <h3>入団条件</h3>
+                <ul style="margin-left: 2rem; line-height: 1.8;">
+                    <li>一般募集は行っておりません。団員からの紹介や関係者を通じた加入を原則とします</li>
+                    <li>高校卒業以上の学生、または社会人の方（高校生は要相談）</li>
+                    <li>湘南工科大学附属高等学校吹奏楽部に協力していただける方</li>
+                    <li>練習や本番に、原則休むことなく団員に協力して参加することができる方</li>
+                    <li>団費・合宿費などを滞納なく支払える方</li>
+                    <li>原則として、個人楽器を所持している方（打楽器を除く）</li>
+                </ul>
+
+                <h3>費用</h3>
+                <p><strong>団費：</strong> 月500円（施設使用料・楽譜代・備品購入などの費用）</p>
+                <p><strong>その他：</strong> 演奏会やコンクールなどに応じて、別途徴収（実費負担）があります</p>
+
+                <h3>入団の流れ</h3>
+                <p>1. 仮入団（見学・体験）期間で実際の練習に参加</p>
+                <p>2. 見学後、入団の面談を行い正式入団（オーディションを行うことがあります）</p>
+            </div>
+        </section>
+
+        <!-- CONTACT セクション -->
+        <section id="contact">
+            <div class="content-card">
+                <h2>Contact</h2>
+                
+                <h3>お問い合わせ</h3>
+                <p>入団に関するご相談や見学希望などございましたら、基本的にはTieS wind symphonyの団員を通じて、指揮者・柿澤までご連絡ください。</p>
+                
+                <h3>活動場所</h3>
+                <p>湘南工科大学附属高等学校<br>
+                音楽室・大講義室</p>
+                
+                <div style="text-align: center; margin-top: 2rem;">
+                    <a href="https://www.sh.shonan-it.ac.jp/" target="_blank" class="btn">湘南工科大学附属高等学校</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 TieS wind symphony. All rights reserved.</p>
+        <p>音楽で結ぶ絆、出逢いとご縁を大切に、TieSサウンドを奏でて。</p>
+    </footer>
+</body>
+</html>
